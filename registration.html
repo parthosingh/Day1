@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+</head>
+<body>
+	<input type="text" name="name" id="name">
+	<select id="gender">
+		<option value="">--</option>
+		<option value="male">M</option>
+		<option value="female">F</option>
+	</select>
+	<input type="text" name="email" id="email">
+	<input type="text" name="mobile" id="mobile">
+	<hr>
+	<h1 id="dName">NAME</h1>
+	<h2 id="dGender">GENDER</h2>
+	<h3 id="dEmail">EMAIL</h3>
+	<h4 id="dMobile">MOBILE</h4>
+	<hr>
+	<button onclick="showName()">NAME</button>
+	<button onclick="showGender()">GENDER</button>
+	<button onclick="showEmail()">EMAIL</button>
+	<button onclick="showMobile()">MOBILE</button>
+	<button onclick="resetForm()">RESET FORM</button>
+	<button onclick="resetDisplay()">RESET DISPLAY</button>
+	<script type="text/javascript">
+        let input1 = document.getElementById("name")
+        let heading = document.getElementById("dName")
+		function showName() {
+			heading.innerText = input1.value 
+		}
+        let input2 = document.getElementById("gender")
+        let Gender = document.getElementById("dGender")
+		function showGender() {
+			Gender.innerText = input2.value
+		}
+        let input3 = document.getElementById("email")
+        let email = document.getElementById("dEmail")
+		function showEmail() {
+			email.innerText = input3.value
+		}
+        let input4 = document.getElementById("mobile")
+        let mobile = document.getElementById("dMobile")
+		function showMobile() {
+			mobile.innerText = input4.value
+		}
+       
+		function resetForm() {
+		
+        input1.value="";
+        input2.value="";
+        input3.value="";
+        input4.value="";
+		}
+
+		function resetDisplay() {
+			heading.innerText="";
+            Gender.innerText="";
+            email.innerText="";
+            mobile.innerText="";
+		}
+	</script>
+</body>
+</html>

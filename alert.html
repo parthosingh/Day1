@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Showing Alerts</title>
+	</head>
+	<body>
+        <input type="text" id="inp1">
+        <input type="text" id="inp2">
+        <input type="text" id="inp3">
+		<button onclick="showFirstName()">FIRSTNAME</button>
+		<button onclick="showLastName()">LASTNAME</button>
+		<button onclick="showFullName()">FIRSTNAME NAME</button>
+		<script type="text/javascript">
+            let input1 = document.getElementById("inp1")
+            function showFirstName() {
+			    alert(input1.value) 
+			}
+            let input2 = document.getElementById("inp2")
+            function showLastName() {
+                alert(input2.value)             
+            }
+         
+            function showFullName() {
+                let allvalue= input1.value+" "+input2.value
+                alert(allvalue)
+                                
+            }
+        </script>
+	</body>
+</html>

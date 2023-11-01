@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="inp1" placeholder="Enter 1st number">
+    <input type="number" id="inp2" placeholder="Enter 2nd number">
+    <button onclick="add()">Addition</button>
+    <button onclick="sub()">Subtraction</button>
+    <button onclick="div()">Division</button>
+    <button onclick="mul()">Multiplication</button>
+</body>
+<script>
+    let input1 = document.getElementById("inp1")
+    let input2 = document.getElementById("inp2")
+function add()
+{
+let input3 = (+inp1.value) + (+inp2.value)
+alert(input3)
+}
+function sub()
+{
+let input4 = (+inp1.value) - (+inp2.value)
+alert(input4)
+}
+function div()
+{
+let input5 = (+inp1.value) / (+inp2.value)
+alert(input5)
+}
+function mul()
+{
+let input6 = (+inp1.value) * (+inp2.value)
+alert(input6)
+}
+</script>
+</html>
